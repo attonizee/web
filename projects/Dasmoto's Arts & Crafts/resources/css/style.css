@@ -1,0 +1,33 @@
+h1 {
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+    background-image: url("/home/aveselyi/git/web/projects/Dasmoto's Arts & Crafts/resources/images/pattern.jpeg");     
+}
+
+h2 {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+#springgreen {
+    background-color: mediumspringgreen;
+}
+
+#lighcoral {
+    background-color: lightcoral;
+}
+
+#skyblue {
+    background-color: skyblue;
+}
+
+.blue {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: blue;
+}
