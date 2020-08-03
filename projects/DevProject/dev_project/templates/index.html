@@ -1,81 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/stylesheet.css" type="text/css" rel="stylesheet">
-    <title>Archers</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#elven_archer">Elven Archer</a></li>
-                <li><a href="#human_archer">Human Archer</a></li>
-                <li><a href="#d_elf_archer">Dark Elf Archer</a></li>
-            </ul>
-            
-        </nav>
-    </header>
-    <main>
-        <section>
-            
-            <article id="elven_archer">
-                <h2>{{archers}}</h1>
-                <p>The Silver Ranger is the ideal Elven fighter in terms of skill with the bow.<br>
-                    A Silver Ranger's key skills are Double Shot, which shoots two arrows consecutively, <br>
-                    and Burst Shot, which hits multiple enemies within range. </p>
-                <ul>
-                    <li>Race - Elf</li>
-                    <li>Armor - Light Armor</li>
-                    <li>Weapon - Bow</li>
-                    <li>Role - Deal Damage</li>
-                </ul>
-            </article>
-        </section>
-        <figure>
-            <img src="./images/silverranger.png" alt="Silver Ranger"/>
-            <figcaption>Elven Archer</figcaption>
-        </figure>
-        <section>
-            <article id="human_archer">
-                <h2>Human Archer</h2>
-                <p>Rather than using daggers, the Hawkeye threatens opponents from afar <br>
-                     using a longbow. Hawkeyes become even more powerful as part of a party. <br>
-                     The Hawkeye's aim is accurate against single opponents, and a Hawkeye can also<br>
-                      attack groups of enemies effectively with skills such as Burst Shot. </p>
-                <ul>
-                    <li>Race - Human</li>
-                    <li>Armor - Light Armor</li>
-                    <li>Weapon - Bow</li>
-                    <li>Role - Deal Damage</li>
-                </ul>
-            </article>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-            <figure>
-                <img src="/images/hawkeye.png" alt="Hawkeye"/>
-                <figcaption>Human Archer</figcaption>
-            </figure>
-    </section>
-    <section>
-        <article id="d_elf_archer">
-            <h2>Dark Elf Archer</h2>
-            <p>The Phantom Ranger handles a bow skillfully and uses techniques similar to those<br>
-                 of other Archers, but Phantom Rangers also have excellent attack strength.<br>
-                 By weakening the defensive strength of an opponent through Hex,<br>
-                  the Phantom Ranger can harass adversaries at long distances using Double Shot,<br>
-                   which shoots two arrows consecutively.</p>
-            <ul>
-                <li>Race - Dark Elf</li>
-                <li>Armor - Light Armor</li>
-                <li>Weapon - Bow</li>
-            </ul>
-        </article>
-        <figure>
-            <img src="./images/phantomranger.png" alt="Phantom Ranger"/>
-            <figcaption>Dark Elf Archer</figcaption>
-        </figure>
-    </section>
-    </main>
-</body>
+        <title>Lineage 2 Classes</title>
+    </head>
+    <body>
+        <ul>
+            {%for l2_class in l2_classes.keys()%}
+            <li><a href='/classes/{{l2_class}}'>{{ l2_class }}</a></li>
+            {%endfor%}
+        </ul>
+    </body>
+
 </html>
