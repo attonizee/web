@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{{template_class_name}}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                {%for key, value in template_l2_class.items()%}
+                <li><a href="#{{value['id']}}">{{key}}</a></li>
+                {%endfor%}
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        {%for key, value in template_l2_class.items()%}
+        <section>
+            
+            <article id="{{ value['id'] }}">
+                <h2>{{key}}</h2>
+                <p>{{ value['description'] }} </p>
+                <ul>
+                    <li>Race - {{value['Race']}}</li>
+                    <li>Armor - {{value['Armor']}}</li>
+                    <li>Weapon - {{value['Weapon']}}</li>
+                    <li>Role - {{value['Role']}}</li>
+                </ul>
+            </article>
+       
+        </section>
+        {%endfor%}
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Lineage 2 Classes</title>
+    </head>
+    <body>
+        <ul>
+            {%for l2_class in l2_classes.keys()%}
+            <li><a href='/classes/{{l2_class}}'>{{ l2_class }}</a></li>
+            {%endfor%}
+        </ul>
+    </body>
+
+</html>
