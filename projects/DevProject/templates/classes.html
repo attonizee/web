@@ -8,13 +8,12 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                {%for class in template_class%}
-                <li><a href="#{{class.id}}">{{class.name}}</a></li>
-                {%endfor%}
-            </ul>
+        <nav class='navbar'>
             
+                {%for class in template_class%}
+                <a href="#{{class.id}}">{{class.name}}</a>
+                {%endfor%}
+                        
         </nav>
     </header>
     <main>
