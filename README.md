@@ -11,6 +11,9 @@
 > In future plans to make it more visual pretty
 - adding CSS
 - making good main page
+>UPD:
+- added some CSS
+- made home page
 
 **Technologies**
 
