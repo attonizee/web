@@ -7,11 +7,15 @@
 - model.py - model for database structure. 
 - data.py - creating database and adding data for further use. 
 - routes.py - consists of routes for application. 
-- app.py - main application.
+- app.py - main application. 
 > In future plans to make it more visual pretty
 - adding CSS
 - making good main page
-
+>UPD:
+- added some CSS
+- made home page
+##Food For Office
+>Started my second flask app. It would be service of delivering food to offices.
 **Technologies**
 
 - Python3
