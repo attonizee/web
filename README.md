@@ -14,12 +14,9 @@
 >UPD:
 - added some CSS
 - made home page
-<<<<<<< HEAD
 ##Food For Office
 >Started my second flask app. It would be service of delivering food to offices.
-=======
 
->>>>>>> 35bd0a52b569d6fb81bca0e604e632918c095bf4
 **Technologies**
 
 - Python3
