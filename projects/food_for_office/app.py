@@ -3,6 +3,9 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'Choovoe7iequ'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///food_for_office.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
+
+import routes
