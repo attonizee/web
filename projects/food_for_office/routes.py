@@ -1,13 +1,12 @@
 from app import app, db
-from flask import render_template, request
+from flask import render_template, request, redirect
 from model import Clients, Company, Order, Products
 from forms import RegistrationForm
 
 
-@app.route('/newuser')
-def new_user():
-    reg_form = RegistrationForm()
-    return render_template('registration.html', template_form = reg_form)
+@app.route('/success')
+def success():
+    return render_template('success.html')
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -19,9 +18,11 @@ def register():
         db.session.add(client)
         try:
             db.session.commit()
-            return render_template('registered.html',template_user = client )
+            return redirect('/success')
         except Exception:
             db.session.rollback()
-            print('Something wrong')
-            return '<h2>This user already exist</h2>'
-    
+            return '''<h2>This user or email already registered</h2>
+            <a href="/register">Return</a>'''
+        
+         
+    return render_template('registration.html', template_form = reg_form)
