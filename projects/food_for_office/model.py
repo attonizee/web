@@ -2,7 +2,10 @@ from app import app, db
 from flask_login import UserMixin
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
+import os
 
+
+db.metadata.clear()
 
 class Clients(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key = True)
@@ -52,4 +55,6 @@ class Products(db.Model):
 
 
 if __name__ == '__main__':
+    if os.path.exists('food_for_office.db'):
+        os.remove('food_for_office.db')
     db.create_all()
