@@ -16,6 +16,7 @@
 - made home page
 ## Food For Office
 >Started my second flask app. It would be service of delivering food to offices.
+>Finished user registration form with validation and feedback for user. Next step authorization and authentication.
 
 **Technologies**
 
