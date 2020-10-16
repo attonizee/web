@@ -4,18 +4,21 @@
         <title>New User Registration</title>
     </head>
     <body>
+        {% if error %}
+            <p class=error><strong>Error: </strong>{{ error }}</p>
+        {% endif %}
+        
+             
         <form action='/register' method='post'>
             {{ template_form.hidden_tag() }}
-            {{ template_form.username.label }}
-            {{ template_form.username() }}
-            {{ template_form.email.label }}
-            {{ template_form.email() }}
-            {{ template_form.password.label }}
-            {{ template_form.password() }}
-            {{ template_form.password2.label }}
-            {{ template_form.password2() }}
-            {{ template_form.submit.label }}
-            {{ template_form.submit() }}
+            {% for field in template_form if field.name != 'csrf_token' %}
+            <p>{{ field.label() }}</p>
+            <p>{{ field }}
+                {% for error in field.errors %}
+                    <strong>{{ error}}</strong>
+                {% endfor %}
+            </p>
+            {% endfor %}
         </form>
         
     </body>
