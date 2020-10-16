@@ -1,8 +1,9 @@
-from app import app, db
-from flask_login import UserMixin
-from datetime import datetime
-from werkzeug.security import generate_password_hash, check_password_hash
 import os
+from datetime import datetime
+from flask_login import UserMixin
+from werkzeug.security import generate_password_hash, check_password_hash
+from app import app, db
+
 
 
 db.metadata.clear()
