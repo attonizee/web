@@ -3,18 +3,7 @@
 ## Dasmoto's Arts & Crafts
 > First HTML & CSS simple project. Farther updates not planned, it's just for training.
 ## DevProject
-> First Flask Web application. Made on SQLite database. Consists of few files 
-- model.py - model for database structure. 
-- data.py - creating database and adding data for further use. 
-- routes.py - consists of routes for application. 
-- app.py - main application. 
-> In future plans to make it more visual pretty
-- adding CSS
-- making good main page
-> UPD:
-- added some CSS
-- made home page
-
+>Separated to own repository
 
 **Technologies**
 
